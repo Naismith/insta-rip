@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	.container
+		h1 InstaRip
+
+		form(method="post")
+			.form-group
+				label Instagram Name (don't include @)
+				.input-group
+					.input-group-prepend
+						.input-group-text @
+					input.form-control(type="text", value="realsportstoronto" name="handle")
+			.input-container
+				.form-group
+					label URL (one per line)
+					textarea.form-control(type="text" name="url", rows="10")
+			button.btn.btn-primary(type="submit") Download
